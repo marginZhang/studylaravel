@@ -78,7 +78,9 @@ class IndexController extends Controller
         $list = array($token, $timestamp, $nonce);
         sort($list);
         $tmpStr = implode($list);
+        error_log(var_export($tmpStr, true) . "\n" . "----" . __FUNCTION__ . "-" . __LINE__ . "----" . "\n", 3, $_SERVER['DOCUMENT_ROOT'] . '/my-errors.log');
         $tmpStr = sha1($tmpStr);
+        error_log(var_export($tmpStr, true) . "\n" . "----" . __FUNCTION__ . "-" . __LINE__ . "----" . "\n", 3, $_SERVER['DOCUMENT_ROOT'] . '/my-errors.log');
         if ($tmpStr == $signature) {
             return true;
         } else {
