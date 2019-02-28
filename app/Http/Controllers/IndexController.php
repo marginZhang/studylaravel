@@ -56,8 +56,9 @@ class IndexController extends Controller
      */
     public function test()
     {
-        var_dump($_REQUEST);
-        echo 234;
+        $data = $_REQUEST;
+        error_log(var_export($data, true) . "\n" . "----" . __FUNCTION__ . "-" . __LINE__ . "----" . "\n", 3, $_SERVER['DOCUMENT_ROOT'] . '/my-errors.log');
+        echo 123;
     }
 
     /**
