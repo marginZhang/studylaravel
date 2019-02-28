@@ -56,6 +56,7 @@ class IndexController extends Controller
      */
     public function test()
     {
+        var_dump($_REQUEST);
         echo 234;
     }
 
