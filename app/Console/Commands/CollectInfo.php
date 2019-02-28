@@ -12,10 +12,10 @@ namespace App\Console\Commands;
 use App\User;
 use Illuminate\Console\Command;
 
-class AreYouOK extends Command
+class CollectInfo extends Command
 {
     protected $signature = 'collect:info';
-    protected $description = '雷军，科技圈最会唱歌的男人';
+    protected $description = 'description';
 
     public function __construct()
     {
