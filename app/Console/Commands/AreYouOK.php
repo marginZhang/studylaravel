@@ -14,7 +14,7 @@ use Illuminate\Console\Command;
 
 class AreYouOK extends Command
 {
-    protected $signature = 'areyou:ok';
+    protected $signature = 'collect:info';
     protected $description = '雷军，科技圈最会唱歌的男人';
 
     public function __construct()
