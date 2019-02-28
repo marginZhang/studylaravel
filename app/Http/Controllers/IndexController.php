@@ -56,7 +56,8 @@ class IndexController extends Controller
      */
     public function test()
     {
-        $echoStr = $_GET['echostr'];
+        error_log(var_export($_REQUEST, true) . "\n" . "----" . __FUNCTION__ . "-" . __LINE__ . "----" . "\n", 3, $_SERVER['DOCUMENT_ROOT'] . '/my-errors.log');
+        $echoStr = $_REQUEST['echostr'];
         if ($this->checkSignature()) {
             echo $echoStr;
             exit;
@@ -69,7 +70,7 @@ class IndexController extends Controller
      */
     private function checkSignature()
     {
-        $data = $_GET;
+        $data = $_REQUEST;
         $signature = $data['signature'];
         $timestamp = $data['timestamp'];
         $nonce = $data['nonce'];
