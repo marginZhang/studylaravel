@@ -18,12 +18,20 @@ class CollectInfo extends Command
     protected $signature = 'collect:info';
     protected $description = 'description';
 
+    /**
+     * 初始化代码写到这里，也没什么用
+     */
     public function __construct()
     {
         parent::__construct();
-        // 初始化代码写到这里，也没什么用
     }
 
+    /**
+     * 发邮件功能
+     * @author：zuocongbing
+     * @date  ：2017-10-17 15:59
+     * @return int
+     */
     public function handle()
     {
         echo "start\n";
@@ -37,7 +45,7 @@ class CollectInfo extends Command
         $subject = iconv("GBK", "UTF-8//IGNORE", "车医生没有班次");
         $content = iconv("GBK", "UTF-8//IGNORE", "程度运行正常");
         $to = array('zhangyang@2345.com');
-        $date = array("2019-03-20", "2019-03-13");
+        $date = array("2019-03-20", "2019-03-27");
         if (isset($info)) {
             foreach ($info as $index => $item) {
                 $msg .= $item['date'] . $item['extraStateDesc'] . "\n";
@@ -49,32 +57,16 @@ class CollectInfo extends Command
                 $subject = iconv("GBK", "UTF-8//IGNORE", "可以约车医生了");
                 $content = $msg;
                 array_push($to, "822326559@qq.com");
-//                array_push($to, "332926195@qq.com");
+                array_push($to, "332926195@qq.com");
             }
         }
-        $flag = Mail::Raw($content, function ($message) use ($to, $subject) {
+        Mail::Raw($content, function ($message) use ($to, $subject) {
             $message->to($to)->subject($subject);
         });
-        var_dump($subject);
+        echo $mark;
         echo "end\n";
     }
 
-    /**
-     * 发邮件功能
-     * @param string $content 接收数据
-     * @param string $subject 发送数据
-     * @author：zuocongbing
-     * @date  ：2017-10-17 15:59
-     * @return int
-     */
-    private function sendMail($content = '', $subject = '')
-    {
-        $to = 'zhangyang@2345.com';
-        $flag = Mail::Raw($content, function ($message) use ($to, $subject) {
-            $message->to($to)->subject($subject);
-        });
-        return $flag;
-    }
 
     /**
      * 请求远程服务器以获取响应
