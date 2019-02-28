@@ -64,6 +64,7 @@ class IndexController extends Controller
         }
     }
 
+
     /**
      * 校验数据
      * @return mixed
@@ -76,7 +77,7 @@ class IndexController extends Controller
         $nonce = $data['nonce'];
         $token = "Thisisacannotdecryptthetoken";
         $list = array($token, $timestamp, $nonce);
-        sort($list);
+        sort($list, SORT_STRING);
         $tmpStr = implode($list);
         error_log(var_export($tmpStr, true) . "\n" . "----" . __FUNCTION__ . "-" . __LINE__ . "----" . "\n", 3, $_SERVER['DOCUMENT_ROOT'] . '/my-errors.log');
         $tmpStr = sha1($tmpStr);
