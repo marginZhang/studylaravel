@@ -26,19 +26,19 @@ class IndexController extends Controller
         $info = $res['data']['shiftSchedule'];
         $msg = '';
         $mark = 0;
-        $subject = "车医生没有班次";
-        $content = "脚本运行正常";
+        $subject = iconv("GBK", "UTF-8//IGNORE", "车医生没有班次");
+        $content = iconv("GBK", "UTF-8//IGNORE", "程度运行正常");
         $to = array('zhangyang@2345.com');
         $date = array("2019-03-20", "2019-03-13");
         if (isset($info)) {
             foreach ($info as $index => $item) {
-                $msg .= $item['date'] . iconv("UTF-8", "GBK", $item['extraStateDesc']) . "\n";
+                $msg .= $item['date'] . $item['extraStateDesc'] . "\n";
                 if (in_array($item['date'], $date) && $item['extraState'] == 1) {
                     $mark++;
                 }
             }
             if ($mark > 0) {
-                $subject = "可以约车医生了";
+                $subject = iconv("GBK", "UTF-8//IGNORE", "可以约车医生了");
                 $content = $msg;
                 array_push($to, "822326559@qq.com");
 //                array_push($to, "332926195@qq.com");
@@ -47,7 +47,7 @@ class IndexController extends Controller
         $flag = Mail::Raw($content, function ($message) use ($to, $subject) {
             $message->to($to)->subject($subject);
         });
-        var_dump($flag);
+        var_dump($subject);
     }
 
     /**
