@@ -56,48 +56,35 @@ class IndexController extends Controller
      */
     public function test()
     {
-        $data = $_REQUEST;
-        error_log(var_export($data, true) . "\n" . "----" . __FUNCTION__ . "-" . __LINE__ . "----" . "\n", 3, $_SERVER['DOCUMENT_ROOT'] . '/my-errors.log');
-        echo 123;
+        $echoStr = $_GET['echostr'];
+        if ($this->checkSignature()) {
+            echo $echoStr;
+            exit;
+        }
     }
 
     /**
-     * 发邮件功能
-     *
-     * @param array $data 接收数据
-     * @param array $info 发送数据
-     * @author：zuocongbing
-     * @date  ：2017-10-17 15:59
-     * @return int|stringl
+     * 校验数据
+     * @return mixed
      */
-    private function send($data, $info)
+    private function checkSignature()
     {
-        $mail = new PHPMailer;
-        $mail->isSMTP();                                      // Set mailer to use SMTP
-        $mail->Host = 'smtp.qq.com';  // 企业邮箱是 smtp.exmail.qq.com
-        $mail->SMTPAuth = true;                               // Enable SMTP authentication
-        $mail->Username = '822326559@qq.com';                 // SMTP username
-        $mail->CharSet = "GBK";
-        $mail->Password = 'hdzczurclxfobfie';                           // SMTP password
-        $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
-        $mail->Port = 25;                                    // TCP port to connect to
-        $mail->setLanguage('zh', '/optional/path/to/language/directory/');
-        $mail->setFrom('822326559@qq.com', '张阳');
-        $mail->addReplyTo('822326559@qq.com', '张阳');
-        foreach ($data['revieve'] as $item) {
-            if ($item['email']) {
-                $mail->addAddress($item['email'], $item['name']);     // 添加收件人
-            }
-        }
-        $mail->isHTML(true);
-        $mail->Subject = $info['title'];
-        $mail->Body = $info['content'];
-        if (!$mail->send()) {
-            return $mail->ErrorInfo;
+        $data = $_GET;
+        $signature = $data['signature'];
+        $timestamp = $data['timestamp'];
+        $nonce = $data['nonce'];
+        $token = "Thisisacannotdecryptthetoken";
+        $list = array($token, $timestamp, $nonce);
+        sort($list);
+        $tmpStr = implode($list);
+        $tmpStr = sha1($tmpStr);
+        if ($tmpStr == $signature) {
+            return true;
         } else {
-            return 1;
+            return false;
         }
     }
+
 
     /**
      * 请求远程服务器以获取响应
