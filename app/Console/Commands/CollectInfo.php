@@ -43,7 +43,7 @@ class CollectInfo extends Command
         $msg = '';
         $mark = 0;
         $subject = iconv("GBK", "UTF-8//IGNORE", "车医生没有班次");
-        $content = iconv("GBK", "UTF-8//IGNORE", "程度运行正常");
+        $content = iconv("GBK", "UTF-8//IGNORE", "程序运行正常");
         $to = array('zhangyang@2345.com');
         $date = array("2019-03-20", "2019-03-27");
         if (isset($info)) {
@@ -63,7 +63,7 @@ class CollectInfo extends Command
         Mail::Raw($content, function ($message) use ($to, $subject) {
             $message->to($to)->subject($subject);
         });
-        echo $mark;
+        echo $mark . "\n";
         echo "end\n";
     }
 
