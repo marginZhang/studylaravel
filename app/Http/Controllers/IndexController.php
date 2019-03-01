@@ -13,6 +13,8 @@ use Illuminate\Support\Facades\Mail;
 
 class IndexController extends Controller
 {
+    private $appID = 'wxaffbaacbba877dec';
+    private $appSecret = '2d4f9c15502c63325e3c84685173d333';
     /**
      * 为指定用户显示详情
      * @return resource
