@@ -44,7 +44,7 @@ class CollectInfo extends Command
         $mark = 0;
         $subject = iconv("GBK", "UTF-8//IGNORE", "车医生没有班次");
         $to = array('822326559@qq.com');
-        $date = array("2019-03-20", "2019-03-27");
+        $date = array("2019-03-27");
         if (isset($info)) {
             foreach ($info as $index => $item) {
                 $msg .= $item['date'] . $item['extraStateDesc'] . "\n";
@@ -57,6 +57,8 @@ class CollectInfo extends Command
                 $subject = iconv("GBK", "UTF-8//IGNORE", "可以约车医生了");
                 array_push($to, "332926195@qq.com");
             }
+        } else {
+            $subject = iconv("GBK", "UTF-8//IGNORE", "cookie过期了");
         }
         Mail::Raw($content, function ($message) use ($to, $subject) {
             $message->to($to)->subject($subject);
