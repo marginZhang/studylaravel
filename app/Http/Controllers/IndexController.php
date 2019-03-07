@@ -58,8 +58,10 @@ class IndexController extends Controller
      */
     public function test()
     {
-        error_log(var_export($_REQUEST, true) . "\n" . "----" . __FUNCTION__ . "-" . __LINE__ . "----" . "\n", 3, $_SERVER['DOCUMENT_ROOT'] . '/my-errors.log');
         $echoStr = $_REQUEST['echostr'];
+        if (!isset($echoStr)) {
+            echo "Hello World!";
+        }
         if ($this->checkSignature()) {
             echo $echoStr;
             exit;
