@@ -58,11 +58,12 @@ class IndexController extends Controller
      */
     public function test()
     {
-        $echoStr = $_REQUEST['echostr'];
-        if (!isset($echoStr)) {
+        if (!isset($_REQUEST['echostr'])) {
             echo "Hello World!";
+            exit;
         }
         if ($this->checkSignature()) {
+            $echoStr = $_REQUEST['echostr'];
             echo $echoStr;
             exit;
         }
