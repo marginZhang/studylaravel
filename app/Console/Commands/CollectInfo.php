@@ -35,8 +35,8 @@ class CollectInfo extends Command
     public function handle()
     {
         echo "start\n";
-        $url = "https://www.guahao.com/expert/new/shiftcase/?expertId=74a96953-2aaf-4be0-be33-63c25d9bf6aa000&hospDeptId=4fe6f974-e0b5-4405-9b3e-c3c01b0d6936000&hospId=5f97d681-0528-40ac-8e43-a4db5cac6c7f000&_=1551836325711";
-        $cookie = '_sid_=1551230786858018725013182; _fp_code_=ced6fc3fb789b0407463bdd1ecbbe3b5; _fm_code=e3Y6ICIyLjUuMCIsIG9zOiAid2ViIiwgczogMTk5LCBlOiAianMgbm90IGRvd25sb2FkIn0%3D; searchHistory=%E8%BD%A6%E9%9C%9E%E9%9D%99%2C%7C%2Cclear; _sh_ssid_=1551836021498; _e_m=1551836021503; monitor_sid=4; mst=1551836022194; _ipgeo=province%3A%E4%B8%8A%E6%B5%B7%7Ccity%3A%E4%B8%8D%E9%99%90; _ci_=QMfhgyhrSCPUdSmHg/M3JJWymcZ/xFZ/fvJXnC7abCqxuL+HIIiQ7uBcEJUQqG+l; __i__=FdWO6KWUoLAaQ7msSRWQcwJ9NMq6C71PLRUFfbQGfUA=; __uiu__=ONy0dwnZrEIZeH+ksMxBEDjf4l2Ngffuc4ht83BYQNBnANO+QoSImw==; __usx__=skHjkgoN7rkgVPdmplvwB8dcodDi+nlDPoSllUWBFCg=; __up__=uVEmQY53bgjzKIzK23td+XKybNrRtV6HGpTs+wgZvPU=; _exp_=++la7GmZr0tQwqFoJOi1bvOmyp2eYXdn8O5pDUn8nnw=; __p__=L/TjXBewPE165wJHe+A1TwCnvCf2bahuv8QPEIdb85LRyl+yQFFAKQ==; __uli__=eQw4yFLlQgm446MwsE5yxL4CtF81GBLKSK7p+SJSgu5IkZ/1cfhZGOwWiVgMkmdzzA2m+rc54uk=; __un__=FticQKb0AShULZlF5FsTPgRnVsypwSVDwBtmAcHixBTFHtDxcUfW8sZm0KoGL5WB; __wyt__=!PDOeLVHHoefTHSU9I3jJ_0QcjFpo9qoQ91Jn3G7iRK5WSilNSrxf4n6j7pqiPIC6hb9SCo1spws59jt730u-yZu2sJNxsg2lK5VuXSvWIjYb9XUMJG-6ChkCHOE2AKqRBS2XUPmuj1lBAnpLoBQQR0g6eFhTuzyigxULMgxlMGNLU; __rf__=iwVmE9s03qvbIh1EEJvrnRbTMklXTfFiv7q1uf7r4ctijPUOzhwnq4jNzZWZhFmL+l1YkqY4cHH6L9SV+qlpcpHrzA+Joy1wetuxxmWp+G5G93JpAFM2nwVkqha9rl6V; monitor_seq=13; mlt=1551836325541';
+        $url = "https://www.guahao.com/expert/new/shiftcase/?expertId=74a96953-2aaf-4be0-be33-63c25d9bf6aa000&hospDeptId=4fe6f974-e0b5-4405-9b3e-c3c01b0d6936000&hospId=5f97d681-0528-40ac-8e43-a4db5cac6c7f000&_=1557040896873";
+        $cookie = '_sid_=1551230786858018725013182; _fp_code_=ced6fc3fb789b0407463bdd1ecbbe3b5; searchHistory=%E8%BD%A6%E9%9C%9E%E9%9D%99%2C%7C%2Cclear; _ipgeo=province%3A%E4%B8%8A%E6%B5%B7%7Ccity%3A%E4%B8%8D%E9%99%90; _sh_ssid_=1557040827668; _e_m=1557040827673; monitor_sid=6; mst=1557040828090; Hm_lvt_5697507823ecd633819db0771bb99cfb=1557040828; _ci_=Q1tYIY73Qw947ldFqarK6BNP9Y9K0FWwAbps3QlT0NheHdvdXCez/P0EBF++bA+t; __i__=r9BaN7jDdh2B0vDtKnKwdsEW6kWtrFcxhxa+3l9EKTk=; __uiu__=aP7TYC7ZDEs+jsu5dSirbSErHysUD7UEjv+7mjE8EhlWrGeErQqu/w==; __usx__=vM+Vx7DSvvk90RPIP0U4JW9rqfu6b15MLQTe6zKFQe4=; __up__=BWDCq+bT7LPEr8b0x4CJ0hw8nXp4hVsmmbhY7nv7Wg0=; _exp_=KhEdiPK6bbacNNJk8sTtwD51RjTBIo56QrW7nrf6CHs=; __p__=3DiMua/EMe5tS5yTD/aCo8uqSW/1GZnm7qiVaLn31mhavnUE52bfVA==; __uli__=DKX1CCN4++0gmKGDUtzvFHYpyHglAKnfTNrYwAqMDGUxT8gfoeegEAWGN8yq7Gt2bI6fxdx0Eo8=; __un__=5XlmljgcPq2ilKB8k2ETOtRRwCyw5XGVp1eaJM6n4BzxVI89zGoqoGpoqKcNOEoM; __wyt__=!P-kZT12PUXk1dls9f2hcn2k8jFpo9qoQ9DJn3G7iRK5WQqJnOg9PvplK0kDtoXo1Dphgw1qA_GDiQcQIZa6WPjadd1qFDCl03bmC12QwZSAnpXUMJG-6ChkCHOE2AKqRBS2XUPmuj1lBAnpLoBQQR0g_Lme5HzM38tKcFgg8esr9A; __rf__=xCbd5TXPYK4o/IxsKByLHG6LuZIcf2q875ThBSouKEFDIW3Sq3f2MKaCAsROo3AwD85eA9oCBL0JCwsOAIvN5I8LKUkN6ocKCpVwMt7xOmo=; Hm_lpvt_5697507823ecd633819db0771bb99cfb=1557040891; _fm_code=e3Y6ICIyLjUuMCIsIG9zOiAid2ViIiwgczogMTk5LCBlOiAianMgbm90IGRvd25sb2FkIn0%3D; monitor_seq=6; mlt=1557040891813; _fmdata=IVW6AU71qSzTtLlnS0UU4TKsZ4W3BagZ9FmwH0l9OVZQTXPVfqUjB6uaSNt9i%2Fo4EwVnIwMuSyZIVIJMkq6gTP0DVga%2BF3Gz%2FCufTygdoCI%3D';
         $res = $this->curl_request($url, '', $cookie);
         $res = json_decode($res, true);
         $info = $res['data']['shiftSchedule'];
@@ -44,8 +44,8 @@ class CollectInfo extends Command
         $mark = 0;
         $subject = iconv("GBK", "UTF-8//IGNORE", "车医生没有班次");
         $to = array('822326559@qq.com');
-        $date = array("2019-03-27");
-        if (isset($info)) {
+        $date = array("2019-05-22");
+        if ($info[0]['extraState'] != 'null') {
             foreach ($info as $index => $item) {
                 $msg .= $item['date'] . $item['extraStateDesc'] . "\n";
                 if (in_array($item['date'], $date) && $item['extraState'] == 1) {
@@ -63,7 +63,7 @@ class CollectInfo extends Command
         Mail::Raw($content, function ($message) use ($to, $subject) {
             $message->to($to)->subject($subject);
         });
-        echo $mark . "\n";
+        echo $info[0]['extraState'] . "\n";
         echo "end\n";
     }
 
