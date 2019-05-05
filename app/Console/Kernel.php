@@ -14,7 +14,10 @@ class Kernel extends ConsoleKernel
      */
     protected $commands = [
         \App\Console\Commands\CollectInfo::class,
+        \App\Console\Commands\AreYouOK::class,
         \App\Console\Commands\info::class,
+//        'App\Console\Commands\colletc',
+//        'App\Console\Commands\colletc:info',
     ];
 
     /**
@@ -27,7 +30,7 @@ class Kernel extends ConsoleKernel
     {
         // $schedule->command('inspire')
         //          ->hourly();
-        $schedule->command('collect:info')
+        $schedule->command('areyou:ok')
             ->timezone('Asia/Shanghai')
             ->everyMinute();
     }
