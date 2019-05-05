@@ -6237,3 +6237,52 @@ Stack trace:
 #7 D:\WWW\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(122): Illuminate\Foundation\Console\Kernel->getArtisan()
 #8 D:\WWW\laravel\artisan(35): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
 #9 {main}  
+[2019-05-05 09:48:00] local.ERROR: Symfony\Component\Console\Exception\CommandNotFoundException: Command "make:console" is not defined.
+
+Did you mean one of these?
+    make:auth
+    make:command
+    make:controller
+    make:event
+    make:job
+    make:listener
+    make:mail
+    make:middleware
+    make:migration
+    make:model
+    make:notification
+    make:policy
+    make:provider
+    make:request
+    make:seeder
+    make:test in D:\WWW\laravel\vendor\symfony\console\Application.php:618
+Stack trace:
+#0 D:\WWW\laravel\vendor\symfony\console\Application.php(229): Symfony\Component\Console\Application->find('make:console')
+#1 D:\WWW\laravel\vendor\symfony\console\Application.php(148): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 D:\WWW\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(122): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 D:\WWW\laravel\artisan(35): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 {main}  
+[2019-05-05 09:50:00] local.ERROR: Symfony\Component\Console\Exception\CommandNotFoundException: There are no commands defined in the "emails" namespace. in D:\WWW\laravel\vendor\symfony\console\Application.php:564
+Stack trace:
+#0 D:\WWW\laravel\vendor\symfony\console\Application.php(604): Symfony\Component\Console\Application->findNamespace('emails')
+#1 D:\WWW\laravel\vendor\symfony\console\Application.php(229): Symfony\Component\Console\Application->find('emails:send')
+#2 D:\WWW\laravel\vendor\symfony\console\Application.php(148): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 D:\WWW\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(122): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 D:\WWW\laravel\artisan(35): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 {main}  
+[2019-05-05 09:50:48] local.ERROR: Symfony\Component\Debug\Exception\FatalThrowableError: Class 'App\Console\Commands\Mail' not found in D:\WWW\laravel\app\Console\Commands\SendEmails.php:65
+Stack trace:
+#0 [internal function]: App\Console\Commands\SendEmails->handle()
+#1 D:\WWW\laravel\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php(29): call_user_func_array(Array, Array)
+#2 D:\WWW\laravel\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php(87): Illuminate\Container\BoundMethod::Illuminate\Container\{closure}()
+#3 D:\WWW\laravel\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php(31): Illuminate\Container\BoundMethod::callBoundMethod(Object(Illuminate\Foundation\Application), Array, Object(Closure))
+#4 D:\WWW\laravel\vendor\laravel\framework\src\Illuminate\Container\Container.php(539): Illuminate\Container\BoundMethod::call(Object(Illuminate\Foundation\Application), Array, Array, NULL)
+#5 D:\WWW\laravel\vendor\laravel\framework\src\Illuminate\Console\Command.php(182): Illuminate\Container\Container->call(Array)
+#6 D:\WWW\laravel\vendor\symfony\console\Command\Command.php(255): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Illuminate\Console\OutputStyle))
+#7 D:\WWW\laravel\vendor\laravel\framework\src\Illuminate\Console\Command.php(167): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Illuminate\Console\OutputStyle))
+#8 D:\WWW\laravel\vendor\symfony\console\Application.php(953): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 D:\WWW\laravel\vendor\symfony\console\Application.php(248): Symfony\Component\Console\Application->doRunCommand(Object(App\Console\Commands\SendEmails), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 D:\WWW\laravel\vendor\symfony\console\Application.php(148): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 D:\WWW\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(122): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 D:\WWW\laravel\artisan(35): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 {main}  

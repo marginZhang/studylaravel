@@ -14,6 +14,7 @@ class Kernel extends ConsoleKernel
      */
     protected $commands = [
         \App\Console\Commands\CollectInfo::class,
+        \App\Console\Commands\SendEmails::class,
         \App\Console\Commands\AreYouOK::class,
         \App\Console\Commands\info::class,
 //        'App\Console\Commands\colletc',
