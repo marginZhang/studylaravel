@@ -6103,3 +6103,115 @@ Stack trace:
 #2 D:\WWW\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(122): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
 #3 D:\WWW\laravel\artisan(35): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
 #4 {main}  
+[2019-05-05 09:04:50] local.ERROR: Symfony\Component\Console\Exception\CommandNotFoundException: There are no commands defined in the "colletc" namespace.
+
+Did you mean this?
+    collect in D:\WWW\laravel\vendor\symfony\console\Application.php:564
+Stack trace:
+#0 D:\WWW\laravel\vendor\symfony\console\Application.php(604): Symfony\Component\Console\Application->findNamespace('colletc')
+#1 D:\WWW\laravel\vendor\symfony\console\Application.php(229): Symfony\Component\Console\Application->find('colletc:info')
+#2 D:\WWW\laravel\vendor\symfony\console\Application.php(148): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 D:\WWW\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(122): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 D:\WWW\laravel\artisan(35): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 {main}  
+[2019-05-05 09:04:54] local.ERROR: Symfony\Component\Console\Exception\CommandNotFoundException: There are no commands defined in the "colletc" namespace.
+
+Did you mean this?
+    collect in D:\WWW\laravel\vendor\symfony\console\Application.php:564
+Stack trace:
+#0 D:\WWW\laravel\vendor\symfony\console\Application.php(604): Symfony\Component\Console\Application->findNamespace('colletc')
+#1 D:\WWW\laravel\vendor\symfony\console\Application.php(229): Symfony\Component\Console\Application->find('colletc:info')
+#2 D:\WWW\laravel\vendor\symfony\console\Application.php(148): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 D:\WWW\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(122): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 D:\WWW\laravel\artisan(35): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 {main}  
+[2019-05-05 09:10:07] local.ERROR: Symfony\Component\Console\Exception\CommandNotFoundException: There are no commands defined in the "info" namespace. in D:\WWW\laravel\vendor\symfony\console\Application.php:564
+Stack trace:
+#0 D:\WWW\laravel\vendor\symfony\console\Application.php(604): Symfony\Component\Console\Application->findNamespace('info')
+#1 D:\WWW\laravel\vendor\symfony\console\Application.php(229): Symfony\Component\Console\Application->find('info:ok')
+#2 D:\WWW\laravel\vendor\symfony\console\Application.php(148): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 D:\WWW\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(122): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 D:\WWW\laravel\artisan(35): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 {main}  
+[2019-05-05 09:10:53] local.ERROR: Symfony\Component\Console\Exception\CommandNotFoundException: There are no commands defined in the "info" namespace. in D:\WWW\laravel\vendor\symfony\console\Application.php:564
+Stack trace:
+#0 D:\WWW\laravel\vendor\symfony\console\Application.php(604): Symfony\Component\Console\Application->findNamespace('info')
+#1 D:\WWW\laravel\vendor\symfony\console\Application.php(229): Symfony\Component\Console\Application->find('info:ok')
+#2 D:\WWW\laravel\vendor\symfony\console\Application.php(148): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 D:\WWW\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(122): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 D:\WWW\laravel\artisan(35): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 {main}  
+[2019-05-05 09:11:18] local.ERROR: Symfony\Component\Console\Exception\CommandNotFoundException: There are no commands defined in the "info" namespace. in D:\WWW\laravel\vendor\symfony\console\Application.php:564
+Stack trace:
+#0 D:\WWW\laravel\vendor\symfony\console\Application.php(604): Symfony\Component\Console\Application->findNamespace('info')
+#1 D:\WWW\laravel\vendor\symfony\console\Application.php(229): Symfony\Component\Console\Application->find('info:ok')
+#2 D:\WWW\laravel\vendor\symfony\console\Application.php(148): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 D:\WWW\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(122): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 D:\WWW\laravel\artisan(35): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 {main}  
+[2019-05-05 09:11:52] local.ERROR: Symfony\Component\Console\Exception\CommandNotFoundException: Command "info" is not defined.
+
+Did you mean this?
+    collect:info in D:\WWW\laravel\vendor\symfony\console\Application.php:618
+Stack trace:
+#0 D:\WWW\laravel\vendor\symfony\console\Application.php(229): Symfony\Component\Console\Application->find('info')
+#1 D:\WWW\laravel\vendor\symfony\console\Application.php(148): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 D:\WWW\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(122): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 D:\WWW\laravel\artisan(35): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 {main}  
+[2019-05-05 09:12:21] local.ERROR: Symfony\Component\Console\Exception\CommandNotFoundException: Command "info" is not defined.
+
+Did you mean this?
+    collect:info in D:\WWW\laravel\vendor\symfony\console\Application.php:618
+Stack trace:
+#0 D:\WWW\laravel\vendor\symfony\console\Application.php(229): Symfony\Component\Console\Application->find('info')
+#1 D:\WWW\laravel\vendor\symfony\console\Application.php(148): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 D:\WWW\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(122): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 D:\WWW\laravel\artisan(35): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 {main}  
+[2019-05-05 09:13:09] local.ERROR: Symfony\Component\Console\Exception\CommandNotFoundException: Command "ColletcInfo" is not defined. in D:\WWW\laravel\vendor\symfony\console\Application.php:618
+Stack trace:
+#0 D:\WWW\laravel\vendor\symfony\console\Application.php(229): Symfony\Component\Console\Application->find('ColletcInfo')
+#1 D:\WWW\laravel\vendor\symfony\console\Application.php(148): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 D:\WWW\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(122): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 D:\WWW\laravel\artisan(35): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 {main}  
+[2019-05-05 09:13:15] local.ERROR: Symfony\Component\Console\Exception\CommandNotFoundException: There are no commands defined in the "ColletcInfo" namespace. in D:\WWW\laravel\vendor\symfony\console\Application.php:564
+Stack trace:
+#0 D:\WWW\laravel\vendor\symfony\console\Application.php(604): Symfony\Component\Console\Application->findNamespace('ColletcInfo')
+#1 D:\WWW\laravel\vendor\symfony\console\Application.php(229): Symfony\Component\Console\Application->find('ColletcInfo:inf...')
+#2 D:\WWW\laravel\vendor\symfony\console\Application.php(148): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 D:\WWW\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(122): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 D:\WWW\laravel\artisan(35): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 {main}  
+[2019-05-05 09:13:22] local.ERROR: Symfony\Component\Console\Exception\CommandNotFoundException: Command "colletc" is not defined.
+
+Did you mean this?
+    collect:info in D:\WWW\laravel\vendor\symfony\console\Application.php:618
+Stack trace:
+#0 D:\WWW\laravel\vendor\symfony\console\Application.php(229): Symfony\Component\Console\Application->find('colletc')
+#1 D:\WWW\laravel\vendor\symfony\console\Application.php(148): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 D:\WWW\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(122): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 D:\WWW\laravel\artisan(35): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 {main}  
+[2019-05-05 09:13:25] local.ERROR: Symfony\Component\Console\Exception\CommandNotFoundException: There are no commands defined in the "colletc" namespace.
+
+Did you mean this?
+    collect in D:\WWW\laravel\vendor\symfony\console\Application.php:564
+Stack trace:
+#0 D:\WWW\laravel\vendor\symfony\console\Application.php(604): Symfony\Component\Console\Application->findNamespace('colletc')
+#1 D:\WWW\laravel\vendor\symfony\console\Application.php(229): Symfony\Component\Console\Application->find('colletc:info')
+#2 D:\WWW\laravel\vendor\symfony\console\Application.php(148): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 D:\WWW\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(122): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 D:\WWW\laravel\artisan(35): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 {main}  
+[2019-05-05 09:13:33] local.ERROR: Symfony\Component\Console\Exception\CommandNotFoundException: Command "colletcinfo" is not defined.
+
+Did you mean this?
+    collect:info in D:\WWW\laravel\vendor\symfony\console\Application.php:618
+Stack trace:
+#0 D:\WWW\laravel\vendor\symfony\console\Application.php(229): Symfony\Component\Console\Application->find('colletcinfo')
+#1 D:\WWW\laravel\vendor\symfony\console\Application.php(148): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 D:\WWW\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(122): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 D:\WWW\laravel\artisan(35): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 {main}  

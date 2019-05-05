@@ -14,6 +14,7 @@ class Kernel extends ConsoleKernel
      */
     protected $commands = [
         \App\Console\Commands\CollectInfo::class,
+        \App\Console\Commands\info::class,
     ];
 
     /**
@@ -26,6 +27,9 @@ class Kernel extends ConsoleKernel
     {
         // $schedule->command('inspire')
         //          ->hourly();
+        $schedule->command('info')
+            ->timezone('Asia/Shanghai')
+            ->everyMinute();
     }
 
     /**
