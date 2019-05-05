@@ -27,7 +27,7 @@ class Kernel extends ConsoleKernel
     {
         // $schedule->command('inspire')
         //          ->hourly();
-        $schedule->command('info')
+        $schedule->command('collect:info')
             ->timezone('Asia/Shanghai')
             ->everyMinute();
     }
