@@ -45,7 +45,7 @@ class SendEmails extends Command
         $info = $res['data']['shiftSchedule'];
         $msg = '';
         $mark = 0;
-        $subject = iconv("GBK", "UTF-8//IGNORE", "车医生没有班次了");
+        $subject = iconv("GBK", "UTF-8//IGNORE", "车医生没有班次SendEmails");
         $to = array('822326559@qq.com');
         $date = array("2019-05-29");
         if ($info[0]['extraState'] != 'null') {
