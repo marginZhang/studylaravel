@@ -13,12 +13,7 @@ class Kernel extends ConsoleKernel
      * @var array
      */
     protected $commands = [
-        \App\Console\Commands\CollectInfo::class,
         \App\Console\Commands\SendEmails::class,
-        \App\Console\Commands\AreYouOK::class,
-        \App\Console\Commands\info::class,
-//        'App\Console\Commands\colletc',
-//        'App\Console\Commands\colletc:info',
     ];
 
     /**
@@ -31,9 +26,6 @@ class Kernel extends ConsoleKernel
     {
         // $schedule->command('inspire')
         //          ->hourly();
-        $schedule->command('areyou:ok')
-            ->timezone('Asia/Shanghai')
-            ->everyMinute();
     }
 
     /**
