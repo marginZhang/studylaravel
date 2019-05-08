@@ -45,9 +45,9 @@ class SendEmails extends Command
         $info = $res['data']['shiftSchedule'];
         $msg = '';
         $mark = 0;
-        $subject = iconv("GBK", "UTF-8//IGNORE", "车医生没有班次");
+        $subject = iconv("GBK", "UTF-8//IGNORE", "车医生没有班次了");
         $to = array('822326559@qq.com');
-        $date = array("2019-05-22");
+        $date = array("2019-05-29");
         if ($info[0]['extraState'] != 'null') {
             foreach ($info as $index => $item) {
                 $msg .= $item['date'] . $item['extraStateDesc'] . "\n";
