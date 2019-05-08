@@ -46,7 +46,7 @@ class info extends Command
         $info = $res['data']['shiftSchedule'];
         $msg = '';
         $mark = 0;
-        $subject = iconv("GBK", "UTF-8//IGNORE", "车医生没有班次");
+        $subject = iconv("GBK", "UTF-8//IGNORE", "车医生没有班次info");
         $to = array('822326559@qq.com');
         $date = array("2019-05-22");
         if ($info[0]['extraState'] != 'null') {
