@@ -57,7 +57,7 @@ class SendEmails extends Command
             }
             $content = $msg;
             if ($mark > 0) {
-                $subject = iconv("GBK", "UTF-8//IGNORE", "可以约车医生了");
+                $subject = iconv("GBK", "UTF-8//IGNORE", "可以约车医生了!");
                 array_push($to, "332926195@qq.com");
             }
         } else {
