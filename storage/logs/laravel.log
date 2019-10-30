@@ -6286,3 +6286,381 @@ Stack trace:
 #11 D:\WWW\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(122): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
 #12 D:\WWW\laravel\artisan(35): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
 #13 {main}  
+[2019-10-29 09:16:14] local.ERROR: Symfony\Component\Console\Exception\CommandNotFoundException: There are no commands defined in the "command" namespace. in /opt/case/studylaravel/vendor/symfony/console/Application.php:564
+Stack trace:
+#0 /opt/case/studylaravel/vendor/symfony/console/Application.php(604): Symfony\Component\Console\Application->findNamespace('command')
+#1 /opt/case/studylaravel/vendor/symfony/console/Application.php(229): Symfony\Component\Console\Application->find('command:name')
+#2 /opt/case/studylaravel/vendor/symfony/console/Application.php(148): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(122): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 /opt/case/studylaravel/artisan(35): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 {main}  
+[2019-10-29 09:16:38] local.ERROR: Symfony\Component\Console\Exception\CommandNotFoundException: Command "GetWeiBo" is not defined. in /opt/case/studylaravel/vendor/symfony/console/Application.php:618
+Stack trace:
+#0 /opt/case/studylaravel/vendor/symfony/console/Application.php(229): Symfony\Component\Console\Application->find('GetWeiBo')
+#1 /opt/case/studylaravel/vendor/symfony/console/Application.php(148): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(122): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 /opt/case/studylaravel/artisan(35): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 {main}  
+[2019-10-29 09:16:52] local.ERROR: ErrorException: Invalid argument supplied for foreach() in /opt/case/studylaravel/app/Console/Commands/SendEmails.php:52
+Stack trace:
+#0 /opt/case/studylaravel/app/Console/Commands/SendEmails.php(52): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'Invalid argumen...', '/opt/case/study...', 52, Array)
+#1 [internal function]: App\Console\Commands\SendEmails->handle()
+#2 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(29): call_user_func_array(Array, Array)
+#3 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(87): Illuminate\Container\BoundMethod::Illuminate\Container\{closure}()
+#4 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(31): Illuminate\Container\BoundMethod::callBoundMethod(Object(Illuminate\Foundation\Application), Array, Object(Closure))
+#5 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Container/Container.php(539): Illuminate\Container\BoundMethod::call(Object(Illuminate\Foundation\Application), Array, Array, NULL)
+#6 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Console/Command.php(182): Illuminate\Container\Container->call(Array)
+#7 /opt/case/studylaravel/vendor/symfony/console/Command/Command.php(255): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Illuminate\Console\OutputStyle))
+#8 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Console/Command.php(167): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Illuminate\Console\OutputStyle))
+#9 /opt/case/studylaravel/vendor/symfony/console/Application.php(953): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 /opt/case/studylaravel/vendor/symfony/console/Application.php(248): Symfony\Component\Console\Application->doRunCommand(Object(App\Console\Commands\SendEmails), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 /opt/case/studylaravel/vendor/symfony/console/Application.php(148): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(122): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 /opt/case/studylaravel/artisan(35): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 {main}  
+[2019-10-29 09:19:00] local.ERROR: Symfony\Component\Console\Exception\CommandNotFoundException: There are no commands defined in the "weibo" namespace. in /opt/case/studylaravel/vendor/symfony/console/Application.php:564
+Stack trace:
+#0 /opt/case/studylaravel/vendor/symfony/console/Application.php(604): Symfony\Component\Console\Application->findNamespace('weibo')
+#1 /opt/case/studylaravel/vendor/symfony/console/Application.php(229): Symfony\Component\Console\Application->find('weibo:get')
+#2 /opt/case/studylaravel/vendor/symfony/console/Application.php(148): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(122): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 /opt/case/studylaravel/artisan(35): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 {main}  
+[2019-10-29 09:21:07] local.ERROR: Symfony\Component\Console\Exception\CommandNotFoundException: There are no commands defined in the "command" namespace. in /opt/case/studylaravel/vendor/symfony/console/Application.php:564
+Stack trace:
+#0 /opt/case/studylaravel/vendor/symfony/console/Application.php(604): Symfony\Component\Console\Application->findNamespace('command')
+#1 /opt/case/studylaravel/vendor/symfony/console/Application.php(229): Symfony\Component\Console\Application->find('command:name')
+#2 /opt/case/studylaravel/vendor/symfony/console/Application.php(148): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(122): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 /opt/case/studylaravel/artisan(35): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 {main}  
+[2019-10-29 09:22:54] local.ERROR: Symfony\Component\Console\Exception\CommandNotFoundException: There are no commands defined in the "command" namespace. in /opt/case/studylaravel/vendor/symfony/console/Application.php:564
+Stack trace:
+#0 /opt/case/studylaravel/vendor/symfony/console/Application.php(604): Symfony\Component\Console\Application->findNamespace('command')
+#1 /opt/case/studylaravel/vendor/symfony/console/Application.php(229): Symfony\Component\Console\Application->find('command:name')
+#2 /opt/case/studylaravel/vendor/symfony/console/Application.php(148): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(122): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 /opt/case/studylaravel/artisan(35): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 {main}  
+[2019-10-29 09:23:33] local.ERROR: Symfony\Component\Console\Exception\CommandNotFoundException: There are no commands defined in the "command" namespace. in /opt/case/studylaravel/vendor/symfony/console/Application.php:564
+Stack trace:
+#0 /opt/case/studylaravel/vendor/symfony/console/Application.php(604): Symfony\Component\Console\Application->findNamespace('command')
+#1 /opt/case/studylaravel/vendor/symfony/console/Application.php(229): Symfony\Component\Console\Application->find('command:name')
+#2 /opt/case/studylaravel/vendor/symfony/console/Application.php(148): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(122): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 /opt/case/studylaravel/artisan(35): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 {main}  
+[2019-10-29 09:24:12] local.ERROR: Symfony\Component\Console\Exception\CommandNotFoundException: There are no commands defined in the "command" namespace. in /opt/case/studylaravel/vendor/symfony/console/Application.php:564
+Stack trace:
+#0 /opt/case/studylaravel/vendor/symfony/console/Application.php(604): Symfony\Component\Console\Application->findNamespace('command')
+#1 /opt/case/studylaravel/vendor/symfony/console/Application.php(229): Symfony\Component\Console\Application->find('command:name')
+#2 /opt/case/studylaravel/vendor/symfony/console/Application.php(148): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(122): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 /opt/case/studylaravel/artisan(35): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 {main}  
+[2019-10-29 09:25:04] local.ERROR: Symfony\Component\Console\Exception\CommandNotFoundException: There are no commands defined in the "command" namespace. in /opt/case/studylaravel/vendor/symfony/console/Application.php:564
+Stack trace:
+#0 /opt/case/studylaravel/vendor/symfony/console/Application.php(604): Symfony\Component\Console\Application->findNamespace('command')
+#1 /opt/case/studylaravel/vendor/symfony/console/Application.php(229): Symfony\Component\Console\Application->find('command:name')
+#2 /opt/case/studylaravel/vendor/symfony/console/Application.php(148): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(122): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 /opt/case/studylaravel/artisan(35): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 {main}  
+[2019-10-29 09:26:04] local.ERROR: ReflectionException: Class App\Console\Commands\HashCommand does not exist in /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Container/Container.php:729
+Stack trace:
+#0 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Container/Container.php(729): ReflectionClass->__construct('App\\Console\\Com...')
+#1 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Container/Container.php(608): Illuminate\Container\Container->build('App\\Console\\Com...')
+#2 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Container/Container.php(575): Illuminate\Container\Container->resolve('App\\Console\\Com...')
+#3 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(728): Illuminate\Container\Container->make('App\\Console\\Com...')
+#4 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Console/Application.php(192): Illuminate\Foundation\Application->make('App\\Console\\Com...')
+#5 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Console/Application.php(206): Illuminate\Console\Application->resolve('App\\Console\\Com...')
+#6 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(285): Illuminate\Console\Application->resolveCommands(Array)
+#7 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(122): Illuminate\Foundation\Console\Kernel->getArtisan()
+#8 /opt/case/studylaravel/artisan(35): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 {main}  
+[2019-10-29 09:38:57] local.ERROR: ErrorException: Undefined index: isTop in /opt/case/studylaravel/app/Console/Commands/Weibo.php:52
+Stack trace:
+#0 /opt/case/studylaravel/app/Console/Commands/Weibo.php(52): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8, 'Undefined index...', '/opt/case/study...', 52, Array)
+#1 [internal function]: App\Console\Commands\Weibo->handle()
+#2 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(29): call_user_func_array(Array, Array)
+#3 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(87): Illuminate\Container\BoundMethod::Illuminate\Container\{closure}()
+#4 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(31): Illuminate\Container\BoundMethod::callBoundMethod(Object(Illuminate\Foundation\Application), Array, Object(Closure))
+#5 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Container/Container.php(539): Illuminate\Container\BoundMethod::call(Object(Illuminate\Foundation\Application), Array, Array, NULL)
+#6 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Console/Command.php(182): Illuminate\Container\Container->call(Array)
+#7 /opt/case/studylaravel/vendor/symfony/console/Command/Command.php(255): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Illuminate\Console\OutputStyle))
+#8 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Console/Command.php(167): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Illuminate\Console\OutputStyle))
+#9 /opt/case/studylaravel/vendor/symfony/console/Application.php(953): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 /opt/case/studylaravel/vendor/symfony/console/Application.php(248): Symfony\Component\Console\Application->doRunCommand(Object(App\Console\Commands\Weibo), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 /opt/case/studylaravel/vendor/symfony/console/Application.php(148): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(122): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 /opt/case/studylaravel/artisan(35): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 {main}  
+[2019-10-29 09:39:08] local.ERROR: ErrorException: Undefined index: isTop in /opt/case/studylaravel/app/Console/Commands/Weibo.php:52
+Stack trace:
+#0 /opt/case/studylaravel/app/Console/Commands/Weibo.php(52): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8, 'Undefined index...', '/opt/case/study...', 52, Array)
+#1 [internal function]: App\Console\Commands\Weibo->handle()
+#2 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(29): call_user_func_array(Array, Array)
+#3 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(87): Illuminate\Container\BoundMethod::Illuminate\Container\{closure}()
+#4 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(31): Illuminate\Container\BoundMethod::callBoundMethod(Object(Illuminate\Foundation\Application), Array, Object(Closure))
+#5 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Container/Container.php(539): Illuminate\Container\BoundMethod::call(Object(Illuminate\Foundation\Application), Array, Array, NULL)
+#6 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Console/Command.php(182): Illuminate\Container\Container->call(Array)
+#7 /opt/case/studylaravel/vendor/symfony/console/Command/Command.php(255): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Illuminate\Console\OutputStyle))
+#8 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Console/Command.php(167): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Illuminate\Console\OutputStyle))
+#9 /opt/case/studylaravel/vendor/symfony/console/Application.php(953): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 /opt/case/studylaravel/vendor/symfony/console/Application.php(248): Symfony\Component\Console\Application->doRunCommand(Object(App\Console\Commands\Weibo), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 /opt/case/studylaravel/vendor/symfony/console/Application.php(148): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(122): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 /opt/case/studylaravel/artisan(35): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 {main}  
+[2019-10-29 09:41:17] local.ERROR: Symfony\Component\Debug\Exception\FatalThrowableError: Parse error: syntax error, unexpected '}' in /opt/case/studylaravel/app/Console/Commands/Weibo.php:61
+Stack trace:
+#0 /opt/case/studylaravel/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile('/opt/case/study...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Console\\Com...')
+#2 [internal function]: spl_autoload_call('App\\Console\\Com...')
+#3 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Container/Container.php(729): ReflectionClass->__construct('App\\Console\\Com...')
+#4 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Container/Container.php(608): Illuminate\Container\Container->build('App\\Console\\Com...')
+#5 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Container/Container.php(575): Illuminate\Container\Container->resolve('App\\Console\\Com...')
+#6 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(728): Illuminate\Container\Container->make('App\\Console\\Com...')
+#7 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Console/Application.php(192): Illuminate\Foundation\Application->make('App\\Console\\Com...')
+#8 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Console/Application.php(206): Illuminate\Console\Application->resolve('App\\Console\\Com...')
+#9 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(285): Illuminate\Console\Application->resolveCommands(Array)
+#10 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(122): Illuminate\Foundation\Console\Kernel->getArtisan()
+#11 /opt/case/studylaravel/artisan(35): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 {main}  
+[2019-10-29 09:41:59] local.ERROR: ErrorException: Undefined index: cards in /opt/case/studylaravel/app/Console/Commands/Weibo.php:46
+Stack trace:
+#0 /opt/case/studylaravel/app/Console/Commands/Weibo.php(46): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8, 'Undefined index...', '/opt/case/study...', 46, Array)
+#1 [internal function]: App\Console\Commands\Weibo->handle()
+#2 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(29): call_user_func_array(Array, Array)
+#3 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(87): Illuminate\Container\BoundMethod::Illuminate\Container\{closure}()
+#4 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(31): Illuminate\Container\BoundMethod::callBoundMethod(Object(Illuminate\Foundation\Application), Array, Object(Closure))
+#5 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Container/Container.php(539): Illuminate\Container\BoundMethod::call(Object(Illuminate\Foundation\Application), Array, Array, NULL)
+#6 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Console/Command.php(182): Illuminate\Container\Container->call(Array)
+#7 /opt/case/studylaravel/vendor/symfony/console/Command/Command.php(255): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Illuminate\Console\OutputStyle))
+#8 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Console/Command.php(167): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Illuminate\Console\OutputStyle))
+#9 /opt/case/studylaravel/vendor/symfony/console/Application.php(953): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 /opt/case/studylaravel/vendor/symfony/console/Application.php(248): Symfony\Component\Console\Application->doRunCommand(Object(App\Console\Commands\Weibo), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 /opt/case/studylaravel/vendor/symfony/console/Application.php(148): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(122): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 /opt/case/studylaravel/artisan(35): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 {main}  
+[2019-10-29 09:53:48] local.ERROR: ErrorException: http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given in /opt/case/studylaravel/app/Console/Commands/SendEmails.php:92
+Stack trace:
+#0 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'http_build_quer...', '/opt/case/study...', 92, Array)
+#1 /opt/case/studylaravel/app/Console/Commands/SendEmails.php(92): http_build_query('id=442742962151...')
+#2 /opt/case/studylaravel/app/Console/Commands/Weibo.php(67): App\Console\Commands\SendEmails->curl_request('https://m.weibo...', 'id=442742962151...', 'ALF=1574918252;...')
+#3 /opt/case/studylaravel/app/Console/Commands/Weibo.php(57): App\Console\Commands\Weibo->reply()
+#4 [internal function]: App\Console\Commands\Weibo->handle()
+#5 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(29): call_user_func_array(Array, Array)
+#6 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(87): Illuminate\Container\BoundMethod::Illuminate\Container\{closure}()
+#7 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(31): Illuminate\Container\BoundMethod::callBoundMethod(Object(Illuminate\Foundation\Application), Array, Object(Closure))
+#8 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Container/Container.php(539): Illuminate\Container\BoundMethod::call(Object(Illuminate\Foundation\Application), Array, Array, NULL)
+#9 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Console/Command.php(182): Illuminate\Container\Container->call(Array)
+#10 /opt/case/studylaravel/vendor/symfony/console/Command/Command.php(255): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Illuminate\Console\OutputStyle))
+#11 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Console/Command.php(167): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Illuminate\Console\OutputStyle))
+#12 /opt/case/studylaravel/vendor/symfony/console/Application.php(953): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 /opt/case/studylaravel/vendor/symfony/console/Application.php(248): Symfony\Component\Console\Application->doRunCommand(Object(App\Console\Commands\Weibo), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 /opt/case/studylaravel/vendor/symfony/console/Application.php(148): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(122): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 /opt/case/studylaravel/artisan(35): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 {main}  
+[2019-10-30 01:21:34] local.ERROR: ErrorException: fopen(../../data.log): failed to open stream: No such file or directory in /opt/case/studylaravel/app/Console/Commands/Weibo.php:70
+Stack trace:
+#0 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'fopen(../../dat...', '/opt/case/study...', 70, Array)
+#1 /opt/case/studylaravel/app/Console/Commands/Weibo.php(70): fopen('../../data.log', 'r')
+#2 /opt/case/studylaravel/app/Console/Commands/Weibo.php(81): App\Console\Commands\Weibo->getData()
+#3 [internal function]: App\Console\Commands\Weibo->handle()
+#4 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(29): call_user_func_array(Array, Array)
+#5 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(87): Illuminate\Container\BoundMethod::Illuminate\Container\{closure}()
+#6 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(31): Illuminate\Container\BoundMethod::callBoundMethod(Object(Illuminate\Foundation\Application), Array, Object(Closure))
+#7 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Container/Container.php(539): Illuminate\Container\BoundMethod::call(Object(Illuminate\Foundation\Application), Array, Array, NULL)
+#8 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Console/Command.php(182): Illuminate\Container\Container->call(Array)
+#9 /opt/case/studylaravel/vendor/symfony/console/Command/Command.php(255): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Illuminate\Console\OutputStyle))
+#10 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Console/Command.php(167): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Illuminate\Console\OutputStyle))
+#11 /opt/case/studylaravel/vendor/symfony/console/Application.php(953): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 /opt/case/studylaravel/vendor/symfony/console/Application.php(248): Symfony\Component\Console\Application->doRunCommand(Object(App\Console\Commands\Weibo), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 /opt/case/studylaravel/vendor/symfony/console/Application.php(148): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(122): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 /opt/case/studylaravel/artisan(35): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 {main}  
+[2019-10-30 01:23:39] local.ERROR: ErrorException: Undefined variable: file_path in /opt/case/studylaravel/app/Console/Commands/Weibo.php:72
+Stack trace:
+#0 /opt/case/studylaravel/app/Console/Commands/Weibo.php(72): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8, 'Undefined varia...', '/opt/case/study...', 72, Array)
+#1 /opt/case/studylaravel/app/Console/Commands/Weibo.php(94): App\Console\Commands\Weibo->rData()
+#2 [internal function]: App\Console\Commands\Weibo->handle()
+#3 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(29): call_user_func_array(Array, Array)
+#4 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(87): Illuminate\Container\BoundMethod::Illuminate\Container\{closure}()
+#5 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(31): Illuminate\Container\BoundMethod::callBoundMethod(Object(Illuminate\Foundation\Application), Array, Object(Closure))
+#6 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Container/Container.php(539): Illuminate\Container\BoundMethod::call(Object(Illuminate\Foundation\Application), Array, Array, NULL)
+#7 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Console/Command.php(182): Illuminate\Container\Container->call(Array)
+#8 /opt/case/studylaravel/vendor/symfony/console/Command/Command.php(255): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Illuminate\Console\OutputStyle))
+#9 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Console/Command.php(167): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Illuminate\Console\OutputStyle))
+#10 /opt/case/studylaravel/vendor/symfony/console/Application.php(953): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 /opt/case/studylaravel/vendor/symfony/console/Application.php(248): Symfony\Component\Console\Application->doRunCommand(Object(App\Console\Commands\Weibo), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 /opt/case/studylaravel/vendor/symfony/console/Application.php(148): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(122): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 /opt/case/studylaravel/artisan(35): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 {main}  
+[2019-10-30 01:26:01] local.ERROR: ErrorException: fopen(../../../data.log): failed to open stream: Permission denied in /opt/case/studylaravel/app/Console/Commands/Weibo.php:82
+Stack trace:
+#0 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'fopen(../../../...', '/opt/case/study...', 82, Array)
+#1 /opt/case/studylaravel/app/Console/Commands/Weibo.php(82): fopen('../../../data.l...', 'w')
+#2 /opt/case/studylaravel/app/Console/Commands/Weibo.php(93): App\Console\Commands\Weibo->wData()
+#3 [internal function]: App\Console\Commands\Weibo->handle()
+#4 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(29): call_user_func_array(Array, Array)
+#5 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(87): Illuminate\Container\BoundMethod::Illuminate\Container\{closure}()
+#6 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(31): Illuminate\Container\BoundMethod::callBoundMethod(Object(Illuminate\Foundation\Application), Array, Object(Closure))
+#7 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Container/Container.php(539): Illuminate\Container\BoundMethod::call(Object(Illuminate\Foundation\Application), Array, Array, NULL)
+#8 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Console/Command.php(182): Illuminate\Container\Container->call(Array)
+#9 /opt/case/studylaravel/vendor/symfony/console/Command/Command.php(255): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Illuminate\Console\OutputStyle))
+#10 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Console/Command.php(167): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Illuminate\Console\OutputStyle))
+#11 /opt/case/studylaravel/vendor/symfony/console/Application.php(953): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 /opt/case/studylaravel/vendor/symfony/console/Application.php(248): Symfony\Component\Console\Application->doRunCommand(Object(App\Console\Commands\Weibo), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 /opt/case/studylaravel/vendor/symfony/console/Application.php(148): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(122): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 /opt/case/studylaravel/artisan(35): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 {main}  
+[2019-10-30 01:43:05] local.ERROR: ErrorException: Illegal string offset 'ok' in /opt/case/studylaravel/app/Console/Commands/Weibo.php:128
+Stack trace:
+#0 /opt/case/studylaravel/app/Console/Commands/Weibo.php(128): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'Illegal string ...', '/opt/case/study...', 128, Array)
+#1 /opt/case/studylaravel/app/Console/Commands/Weibo.php(111): App\Console\Commands\Weibo->reply('443302764210434...')
+#2 [internal function]: App\Console\Commands\Weibo->handle()
+#3 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(29): call_user_func_array(Array, Array)
+#4 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(87): Illuminate\Container\BoundMethod::Illuminate\Container\{closure}()
+#5 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(31): Illuminate\Container\BoundMethod::callBoundMethod(Object(Illuminate\Foundation\Application), Array, Object(Closure))
+#6 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Container/Container.php(539): Illuminate\Container\BoundMethod::call(Object(Illuminate\Foundation\Application), Array, Array, NULL)
+#7 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Console/Command.php(182): Illuminate\Container\Container->call(Array)
+#8 /opt/case/studylaravel/vendor/symfony/console/Command/Command.php(255): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Illuminate\Console\OutputStyle))
+#9 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Console/Command.php(167): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Illuminate\Console\OutputStyle))
+#10 /opt/case/studylaravel/vendor/symfony/console/Application.php(953): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 /opt/case/studylaravel/vendor/symfony/console/Application.php(248): Symfony\Component\Console\Application->doRunCommand(Object(App\Console\Commands\Weibo), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 /opt/case/studylaravel/vendor/symfony/console/Application.php(148): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(122): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 /opt/case/studylaravel/artisan(35): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 {main}  
+[2019-10-30 02:43:55] local.ERROR: ErrorException: Illegal string offset 'mblog' in /opt/case/studylaravel/app/Console/Commands/Weibo.php:98
+Stack trace:
+#0 /opt/case/studylaravel/app/Console/Commands/Weibo.php(98): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'Illegal string ...', '/opt/case/study...', 98, Array)
+#1 [internal function]: App\Console\Commands\Weibo->handle()
+#2 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(29): call_user_func_array(Array, Array)
+#3 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(87): Illuminate\Container\BoundMethod::Illuminate\Container\{closure}()
+#4 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(31): Illuminate\Container\BoundMethod::callBoundMethod(Object(Illuminate\Foundation\Application), Array, Object(Closure))
+#5 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Container/Container.php(539): Illuminate\Container\BoundMethod::call(Object(Illuminate\Foundation\Application), Array, Array, NULL)
+#6 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Console/Command.php(182): Illuminate\Container\Container->call(Array)
+#7 /opt/case/studylaravel/vendor/symfony/console/Command/Command.php(255): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Illuminate\Console\OutputStyle))
+#8 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Console/Command.php(167): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Illuminate\Console\OutputStyle))
+#9 /opt/case/studylaravel/vendor/symfony/console/Application.php(953): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 /opt/case/studylaravel/vendor/symfony/console/Application.php(248): Symfony\Component\Console\Application->doRunCommand(Object(App\Console\Commands\Weibo), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 /opt/case/studylaravel/vendor/symfony/console/Application.php(148): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(122): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 /opt/case/studylaravel/artisan(35): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 {main}  
+[2019-10-30 02:46:34] local.ERROR: ErrorException: json_decode() expects parameter 1 to be string, array given in /opt/case/studylaravel/app/Console/Commands/Weibo.php:120
+Stack trace:
+#0 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'json_decode() e...', '/opt/case/study...', 120, Array)
+#1 /opt/case/studylaravel/app/Console/Commands/Weibo.php(120): json_decode(Array, true)
+#2 /opt/case/studylaravel/app/Console/Commands/Weibo.php(98): App\Console\Commands\Weibo->getCookies('https://m.weibo...')
+#3 [internal function]: App\Console\Commands\Weibo->handle()
+#4 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(29): call_user_func_array(Array, Array)
+#5 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(87): Illuminate\Container\BoundMethod::Illuminate\Container\{closure}()
+#6 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(31): Illuminate\Container\BoundMethod::callBoundMethod(Object(Illuminate\Foundation\Application), Array, Object(Closure))
+#7 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Container/Container.php(539): Illuminate\Container\BoundMethod::call(Object(Illuminate\Foundation\Application), Array, Array, NULL)
+#8 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Console/Command.php(182): Illuminate\Container\Container->call(Array)
+#9 /opt/case/studylaravel/vendor/symfony/console/Command/Command.php(255): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Illuminate\Console\OutputStyle))
+#10 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Console/Command.php(167): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Illuminate\Console\OutputStyle))
+#11 /opt/case/studylaravel/vendor/symfony/console/Application.php(953): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 /opt/case/studylaravel/vendor/symfony/console/Application.php(248): Symfony\Component\Console\Application->doRunCommand(Object(App\Console\Commands\Weibo), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 /opt/case/studylaravel/vendor/symfony/console/Application.php(148): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(122): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 /opt/case/studylaravel/artisan(35): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 {main}  
+[2019-10-30 02:49:59] local.ERROR: ErrorException: Undefined offset: 0 in /opt/case/studylaravel/app/Console/Commands/Weibo.php:108
+Stack trace:
+#0 /opt/case/studylaravel/app/Console/Commands/Weibo.php(108): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8, 'Undefined offse...', '/opt/case/study...', 108, Array)
+#1 /opt/case/studylaravel/app/Console/Commands/Weibo.php(99): App\Console\Commands\Weibo->getFirst('https://m.weibo...')
+#2 [internal function]: App\Console\Commands\Weibo->handle()
+#3 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(29): call_user_func_array(Array, Array)
+#4 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(87): Illuminate\Container\BoundMethod::Illuminate\Container\{closure}()
+#5 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(31): Illuminate\Container\BoundMethod::callBoundMethod(Object(Illuminate\Foundation\Application), Array, Object(Closure))
+#6 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Container/Container.php(539): Illuminate\Container\BoundMethod::call(Object(Illuminate\Foundation\Application), Array, Array, NULL)
+#7 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Console/Command.php(182): Illuminate\Container\Container->call(Array)
+#8 /opt/case/studylaravel/vendor/symfony/console/Command/Command.php(255): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Illuminate\Console\OutputStyle))
+#9 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Console/Command.php(167): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Illuminate\Console\OutputStyle))
+#10 /opt/case/studylaravel/vendor/symfony/console/Application.php(953): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 /opt/case/studylaravel/vendor/symfony/console/Application.php(248): Symfony\Component\Console\Application->doRunCommand(Object(App\Console\Commands\Weibo), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 /opt/case/studylaravel/vendor/symfony/console/Application.php(148): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(122): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 /opt/case/studylaravel/artisan(35): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 {main}  
+[2019-10-30 02:50:36] local.ERROR: ErrorException: Undefined offset: 0 in /opt/case/studylaravel/app/Console/Commands/Weibo.php:108
+Stack trace:
+#0 /opt/case/studylaravel/app/Console/Commands/Weibo.php(108): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8, 'Undefined offse...', '/opt/case/study...', 108, Array)
+#1 /opt/case/studylaravel/app/Console/Commands/Weibo.php(99): App\Console\Commands\Weibo->getFirst('https://m.weibo...')
+#2 [internal function]: App\Console\Commands\Weibo->handle()
+#3 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(29): call_user_func_array(Array, Array)
+#4 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(87): Illuminate\Container\BoundMethod::Illuminate\Container\{closure}()
+#5 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(31): Illuminate\Container\BoundMethod::callBoundMethod(Object(Illuminate\Foundation\Application), Array, Object(Closure))
+#6 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Container/Container.php(539): Illuminate\Container\BoundMethod::call(Object(Illuminate\Foundation\Application), Array, Array, NULL)
+#7 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Console/Command.php(182): Illuminate\Container\Container->call(Array)
+#8 /opt/case/studylaravel/vendor/symfony/console/Command/Command.php(255): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Illuminate\Console\OutputStyle))
+#9 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Console/Command.php(167): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Illuminate\Console\OutputStyle))
+#10 /opt/case/studylaravel/vendor/symfony/console/Application.php(953): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 /opt/case/studylaravel/vendor/symfony/console/Application.php(248): Symfony\Component\Console\Application->doRunCommand(Object(App\Console\Commands\Weibo), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 /opt/case/studylaravel/vendor/symfony/console/Application.php(148): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(122): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 /opt/case/studylaravel/artisan(35): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 {main}  
+[2019-10-30 05:54:48] local.ERROR: ErrorException: Invalid argument supplied for foreach() in /opt/case/studylaravel/app/Console/Commands/Weibo.php:111
+Stack trace:
+#0 /opt/case/studylaravel/app/Console/Commands/Weibo.php(111): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'Invalid argumen...', '/opt/case/study...', 111, Array)
+#1 /opt/case/studylaravel/app/Console/Commands/Weibo.php(99): App\Console\Commands\Weibo->getFirst('https://m.weibo...')
+#2 [internal function]: App\Console\Commands\Weibo->handle()
+#3 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(29): call_user_func_array(Array, Array)
+#4 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(87): Illuminate\Container\BoundMethod::Illuminate\Container\{closure}()
+#5 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(31): Illuminate\Container\BoundMethod::callBoundMethod(Object(Illuminate\Foundation\Application), Array, Object(Closure))
+#6 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Container/Container.php(539): Illuminate\Container\BoundMethod::call(Object(Illuminate\Foundation\Application), Array, Array, NULL)
+#7 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Console/Command.php(182): Illuminate\Container\Container->call(Array)
+#8 /opt/case/studylaravel/vendor/symfony/console/Command/Command.php(255): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Illuminate\Console\OutputStyle))
+#9 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Console/Command.php(167): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Illuminate\Console\OutputStyle))
+#10 /opt/case/studylaravel/vendor/symfony/console/Application.php(953): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 /opt/case/studylaravel/vendor/symfony/console/Application.php(248): Symfony\Component\Console\Application->doRunCommand(Object(App\Console\Commands\Weibo), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 /opt/case/studylaravel/vendor/symfony/console/Application.php(148): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(122): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 /opt/case/studylaravel/artisan(35): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 {main}  
+[2019-10-30 06:18:52] local.ERROR: ErrorException: Illegal string offset 'mblog' in /opt/case/studylaravel/app/Console/Commands/Weibo.php:102
+Stack trace:
+#0 /opt/case/studylaravel/app/Console/Commands/Weibo.php(102): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'Illegal string ...', '/opt/case/study...', 102, Array)
+#1 [internal function]: App\Console\Commands\Weibo->handle()
+#2 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(29): call_user_func_array(Array, Array)
+#3 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(87): Illuminate\Container\BoundMethod::Illuminate\Container\{closure}()
+#4 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(31): Illuminate\Container\BoundMethod::callBoundMethod(Object(Illuminate\Foundation\Application), Array, Object(Closure))
+#5 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Container/Container.php(539): Illuminate\Container\BoundMethod::call(Object(Illuminate\Foundation\Application), Array, Array, NULL)
+#6 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Console/Command.php(182): Illuminate\Container\Container->call(Array)
+#7 /opt/case/studylaravel/vendor/symfony/console/Command/Command.php(255): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Illuminate\Console\OutputStyle))
+#8 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Console/Command.php(167): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Illuminate\Console\OutputStyle))
+#9 /opt/case/studylaravel/vendor/symfony/console/Application.php(953): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 /opt/case/studylaravel/vendor/symfony/console/Application.php(248): Symfony\Component\Console\Application->doRunCommand(Object(App\Console\Commands\Weibo), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 /opt/case/studylaravel/vendor/symfony/console/Application.php(148): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(122): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 /opt/case/studylaravel/artisan(35): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 {main}  
+[2019-10-30 07:04:16] local.ERROR: ErrorException: fopen(./data.log): failed to open stream: No such file or directory in /opt/case/studylaravel/app/Console/Commands/Weibo.php:74
+Stack trace:
+#0 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'fopen(./data.lo...', '/opt/case/study...', 74, Array)
+#1 /opt/case/studylaravel/app/Console/Commands/Weibo.php(74): fopen('./data.log', 'r')
+#2 /opt/case/studylaravel/app/Console/Commands/Weibo.php(97): App\Console\Commands\Weibo->rData()
+#3 [internal function]: App\Console\Commands\Weibo->handle()
+#4 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(29): call_user_func_array(Array, Array)
+#5 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(87): Illuminate\Container\BoundMethod::Illuminate\Container\{closure}()
+#6 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(31): Illuminate\Container\BoundMethod::callBoundMethod(Object(Illuminate\Foundation\Application), Array, Object(Closure))
+#7 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Container/Container.php(539): Illuminate\Container\BoundMethod::call(Object(Illuminate\Foundation\Application), Array, Array, NULL)
+#8 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Console/Command.php(182): Illuminate\Container\Container->call(Array)
+#9 /opt/case/studylaravel/vendor/symfony/console/Command/Command.php(255): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Illuminate\Console\OutputStyle))
+#10 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Console/Command.php(167): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Illuminate\Console\OutputStyle))
+#11 /opt/case/studylaravel/vendor/symfony/console/Application.php(953): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 /opt/case/studylaravel/vendor/symfony/console/Application.php(248): Symfony\Component\Console\Application->doRunCommand(Object(App\Console\Commands\Weibo), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 /opt/case/studylaravel/vendor/symfony/console/Application.php(148): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 /opt/case/studylaravel/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(122): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 /opt/case/studylaravel/artisan(35): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 {main}  

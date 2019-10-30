@@ -14,6 +14,7 @@ class Kernel extends ConsoleKernel
      */
     protected $commands = [
         \App\Console\Commands\SendEmails::class,
+        \App\Console\Commands\Weibo::class,
     ];
 
     /**

@@ -32,7 +32,7 @@ class SendEmails extends Command
     }
 
     /**
-     * ÇëÇóÔ¶³Ì·þÎñÆ÷ÒÔ»ñÈ¡ÏìÓ¦
+     * ï¿½ï¿½ï¿½ï¿½Ô¶ï¿½Ì·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô»ï¿½È¡ï¿½ï¿½Ó¦
      * @return mixed
      */
     public function handle()
@@ -45,7 +45,7 @@ class SendEmails extends Command
         $info = $res['data']['shiftSchedule'];
         $msg = '';
         $mark = 0;
-        $subject = iconv("GBK", "UTF-8//IGNORE", "³µÒ½ÉúÃ»ÓÐ°à´ÎSendEmails");
+        $subject = iconv("GBK", "UTF-8//IGNORE", "ï¿½ï¿½Ò½ï¿½ï¿½Ã»ï¿½Ð°ï¿½ï¿½SendEmails");
         $to = array('822326559@qq.com');
         $date = array("2019-05-29");
         if ($info[0]['extraState'] != 'null') {
@@ -57,11 +57,11 @@ class SendEmails extends Command
             }
             $content = $msg;
             if ($mark > 0) {
-                $subject = iconv("GBK", "UTF-8//IGNORE", "¿ÉÒÔÔ¼³µÒ½ÉúÁË!");
+                $subject = iconv("GBK", "UTF-8//IGNORE", "ï¿½ï¿½ï¿½ï¿½Ô¼ï¿½ï¿½Ò½ï¿½ï¿½ï¿½ï¿½!");
                 array_push($to, "332926195@qq.com");
             }
         } else {
-            $subject = iconv("GBK", "UTF-8//IGNORE", "cookie¹ýÆÚÁË");
+            $subject = iconv("GBK", "UTF-8//IGNORE", "cookieï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
         }
         Mail::Raw($content, function ($message) use ($to, $subject) {
             $message->to($to)->subject($subject);
@@ -72,14 +72,14 @@ class SendEmails extends Command
 
 
     /**
-     * ÇëÇóÔ¶³Ì·þÎñÆ÷ÒÔ»ñÈ¡ÏìÓ¦
-     * @param string $url ×ÊÔ´µØÖ·
-     * @param string $post ÇëÇó²ÎÊý
-     * @param string $cookie ÇëÇó·½Ê½
-     * @param int $returnCookie ³¬Ê±Ê±¼ä£¨Ãë£©
+     * ï¿½ï¿½ï¿½ï¿½Ô¶ï¿½Ì·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô»ï¿½È¡ï¿½ï¿½Ó¦
+     * @param string $url ï¿½ï¿½Ô´ï¿½ï¿½Ö·
+     * @param string $post ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+     * @param string $cookie ï¿½ï¿½ï¿½ï¿½Ê½
+     * @param int $returnCookie ï¿½ï¿½Ê±Ê±ï¿½ä£¨ï¿½ë£©
      * @return mixed
      */
-    private function curl_request($url, $post = '', $cookie = '', $returnCookie = 0)
+    public function curl_request($url, $post = '', $cookie = '', $returnCookie = 0)
     {
         $curl = curl_init();
         curl_setopt($curl, CURLOPT_URL, $url);
@@ -106,8 +106,9 @@ class SendEmails extends Command
         curl_close($curl);
         if ($returnCookie) {
             list($header, $body) = explode("\r\n\r\n", $data, 2);
-            preg_match_all("/Set\-Cookie:([^;]*);/", $header, $matches);
-            $info['cookie'] = substr($matches[1][0], 1);
+//            preg_match_all("/Set\-Cookie:([^;]*);/", $header, $matches);
+//            $info['cookie'] = substr($matches[1][2], 1);
+            $info['cookie'] = $header;
             $info['content'] = $body;
             return $info;
         } else {
