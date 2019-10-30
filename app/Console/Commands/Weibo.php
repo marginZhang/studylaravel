@@ -95,11 +95,9 @@ class Weibo extends Command
     public function handle()
     {
         $text = $this->rData();
-
         $url = 'https://m.weibo.cn/api/container/getIndex?containerid=1076031660963912';
 //        $url = 'https://m.weibo.cn/api/container/getIndex?containerid=1076032108218774';
         $card = $this->getFirst($url);
-        $this->getCookies();
         if ($card['mblog']['text'] !== $text) {
             $this->reply($card['mblog']['id']);
         }
@@ -132,6 +130,7 @@ class Weibo extends Command
     }
 
     private function reply($id) {
+        $this->getCookies();
         $url = 'https://m.weibo.cn/api/comments/create';
         $post = array(
             'id' => $id,
